@@ -9,7 +9,7 @@ export const BusinessList=()=>{
             businessesListHTML +=`
             <section class="business">
                <h2 class="business--name">${businessObject.companyName}</h2}
-               <div class="business--details">${businessObject.addressFullStreet}<br>${addressCity} ${addressStateCode} ${addressZipCode}</div>
+               <div class="business--details">${businessObject.addressFullStreet}<br>${businessObject.addressCity} ${businessObject.addressStateCode} ${businessObject.addressZipCode}</div>
                <hr>
                </section>
                `

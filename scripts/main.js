@@ -1,4 +1,4 @@
-import { BusinessList } from "./BusinessList"
+import { BusinessList } from "./BusinessList.js"
 const businessHTML = BusinessList();
 const contentTarget = document.querySelector("#content")
 
@@ -15,17 +15,17 @@ const renderHTML = () => {
 
   <article class="businesses--manufacturing">
       <h2>Manufacturing Businesses</h2>
-      ${}
+      
   </article>
 
   <article class="businesses--newYork">
       <h2>New York Businesses</h2>
-      ${}
+      
   </article>
 
   <article class="agents">
       <h2>Purchasing Agents</h2>
-      ${}
+      
   </article>
   `
 }
