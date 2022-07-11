@@ -146,3 +146,5 @@ const database = {
     const copy = database.businesses.map(stuff => ({...stuff}))
     return copy
   }
+
+  
