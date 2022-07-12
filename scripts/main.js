@@ -1,9 +1,11 @@
 import { BusinessList } from "./BusinessList.js"
 import {NewYorkBusinesses} from "./NewYorkBusinesses.js"
 import {ManufacturingBusinesses} from "./ManufacturingBusinesses.js"
+import {getPurchasingAgents} from "./AgentList.js"
 const businessHTML = BusinessList();
 const NewYorkHTML = NewYorkBusinesses();    
 const manufacturingHTML = ManufacturingBusinesses();
+const agentList = getPurchasingAgents();
 const contentTarget = document.querySelector("#content")
 
 const renderHTML = () => {
@@ -29,7 +31,7 @@ const renderHTML = () => {
 
   <article class="agents">
       <h2>Purchasing Agents</h2>
-      
+    ${agentList}
   </article>
   `
 }
