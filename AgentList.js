@@ -2,9 +2,10 @@ import { getBusinesses } from "./database.js";
 const businessArray = getBusinesses();
 
 
-const agentHTMLRepresentations = businessArray.purchasingAgent.map(
+const agentHTMLRepresentations = businessArray.map(
     // Your callback function goes here
-    agentArray => agentArray.nameFirst +' ' + agentArray.nameLast
+    (agentArray) => {agentArray.purchasingAgent.nameFirst + agentArray.purchasingAgent.nameLast + agentArray.companyName + agentArray.phoneWork}
+
 )
 console.log(agentHTMLRepresentations)
 
